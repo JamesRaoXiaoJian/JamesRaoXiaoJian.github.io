@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f5ef">
+    <meta name="description" content="我是饶小建，也可以叫我 James。在深圳大学读计算机，最近主要在做机器人、灵巧手和真机数据。">
+    <title>饶小建 · James Rao</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">跳到正文</a>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="wordmark" href="#about" aria-label="James Rao">jr<span>.</span></a>
+        <nav class="navigation" aria-label="主导航" data-i18n-label="navigationLabel">
+          <a href="#projects" data-i18n="navProjects">项目</a>
+          <a href="#now" data-i18n="navNow">近况</a>
+          <a href="#contact" data-i18n="navContact">联系</a>
+          <button class="language-switch" type="button" aria-label="Switch to English" hidden>EN <span aria-hidden="true">↗</span></button>
+        </nav>
+      </header>
+
+      <main id="main">
+        <section class="hero" id="about" aria-labelledby="intro-title">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span><span data-i18n="location">中国 · 深圳</span></p>
+            <h1 id="intro-title"><span data-i18n="hello">你好，我是</span><br><span class="name" data-i18n="name">饶小建<span class="name-period">。</span></span></h1>
+            <p class="alias" data-i18n="alias">也可以叫我 James。</p>
+            <div class="intro-text">
+              <p data-i18n="introFirst">在深圳大学读计算机，最近主要在做机器人。</p>
+              <p data-i18n="introSecond">采数据、跑仿真，再把模型放到真实的机械臂和灵巧手上试一试。这里放一些正在做的项目。</p>
+            </div>
+            <a class="text-link hero-link" href="#projects"><span data-i18n="explore">看看我的项目</span><span aria-hidden="true">↘</span></a>
+          </div>
+
+          <figure class="hero-artwork">
+            <img src="assets/robot-hero.png" width="1122" height="1402" fetchpriority="high" alt="米白色机械臂伸向橙色方块的概念插画" data-i18n-alt="heroArtAlt">
+            <figcaption><span>ROBOTICS / HANDS / DATA</span><span data-i18n="heroArtLabel">概念插画</span></figcaption>
+          </figure>
+        </section>
+
+        <section class="projects section" id="projects" aria-labelledby="projects-title">
+          <div class="section-heading">
+            <div><p class="section-index">01 / <span data-i18n="projectsEyebrow">一些项目</span></p><h2 id="projects-title" data-i18n="projectsTitle">最近在折腾什么</h2></div>
+            <a class="subtle-link" href="https://github.com/JamesRaoXiaoJian?tab=repositories" target="_blank" rel="noopener noreferrer"><span data-i18n="allProjects">所有仓库</span><span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="project-grid">
+            <a class="project-card" href="https://github.com/JamesRaoXiaoJian/sim2real_g1" target="_blank" rel="noopener noreferrer">
+              <div class="project-cover cover-g1"><img src="assets/g1-evaluation.png" width="1940" height="1132" loading="lazy" alt="G1 策略评估界面与三路真机相机画面" data-i18n-alt="coverG1Alt"><span class="cover-label" data-i18n="coverG1Label">真机评估界面</span></div>
+              <div class="project-top"><span class="project-number">01</span><span class="project-category" data-i18n="categoryRobot">机器人</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+              <h3>sim2real_g1</h3>
+              <p data-i18n="projectG1">让 G1 的双臂和灵巧手跑起策略模型。先在仿真里试，再到真机上看实际效果。</p>
+              <div class="project-tags"><span>Unitree G1</span><span>ACT / π0.5</span><span>MuJoCo</span></div>
+            </a>
+            <a class="project-card" href="https://github.com/JamesRaoXiaoJian/TransVTLA-RealDataCollect" target="_blank" rel="noopener noreferrer">
+              <div class="project-cover cover-data"><img src="assets/data-world.jpg" width="640" height="480" loading="lazy" alt="数据采集的主视角" data-i18n-alt="coverWorldAlt"><img src="assets/data-wrist.jpg" width="640" height="480" loading="lazy" alt="同一任务的腕部相机视角" data-i18n-alt="coverWristAlt"><span class="cover-label" data-i18n="coverDataLabel">主视角 / 腕部视角</span></div>
+              <div class="project-top"><span class="project-number">02</span><span class="project-category" data-i18n="categoryData">真机数据</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+              <h3>RealDataCollect</h3>
+              <p data-i18n="projectData">把相机、触觉和机器人状态一起采下来，检查、清洗，再整理成能用来训练的数据。</p>
+              <div class="project-tags"><span>RGB-D</span><span data-i18n="tagTactile">触觉</span><span>RLDS / TFDS</span></div>
+            </a>
+            <a class="project-card" href="https://github.com/JamesRaoXiaoJian/LEAP-DexRetarget" target="_blank" rel="noopener noreferrer">
+              <div class="project-cover cover-hand"><img src="assets/hand-cover.png" width="1586" height="992" loading="lazy" alt="机械手与人手线框之间运动映射的概念插画" data-i18n-alt="coverHandAlt"><span class="cover-label" data-i18n="coverHandLabel">灵巧手重定向 · 概念图</span></div>
+              <div class="project-top"><span class="project-number">03</span><span class="project-category" data-i18n="categoryHand">灵巧手</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+              <h3>LEAP-DexRetarget</h3>
+              <p data-i18n="projectHand">把人手动作映射到灵巧手上。目前在做重定向和仿真验证，后面接数据采集与模仿学习。</p>
+              <div class="project-tags"><span>LEAP / Allegro</span><span>Retargeting</span></div>
+            </a>
+            <a class="project-card project-card-play" href="https://github.com/JamesRaoXiaoJian/SV_Soul" target="_blank" rel="noopener noreferrer">
+              <div class="project-cover cover-game"><img src="assets/soul-cover.png" width="1586" height="992" loading="lazy" alt="村庄里两位角色交谈的像素风项目封面插画" data-i18n-alt="coverGameAlt"><span class="cover-label" data-i18n="coverGameLabel">AI NPC · 封面插画</span></div>
+              <div class="project-top"><span class="project-number">04</span><span class="project-category" data-i18n="categoryGame">游戏里的 AI</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+              <h3>SV_Soul</h3>
+              <p data-i18n="projectGame">给《星露谷物语》的 NPC 加上 AI 对话。让角色记得聊过的事，也知道游戏里正在发生什么。</p>
+              <div class="project-tags"><span>Stardew Valley</span><span data-i18n="tagMemory">角色记忆</span><span>C#</span></div>
+            </a>
+          </div>
+          <div class="other-projects"><span data-i18n="also">还有一些小工具</span><div><a href="https://github.com/JamesRaoXiaoJian/g1_motion_player" target="_blank" rel="noopener noreferrer">G1 Motion Player ↗</a><a href="https://github.com/JamesRaoXiaoJian/FRPWatch" target="_blank" rel="noopener noreferrer">FRPWatch ↗</a><a href="https://github.com/JamesRaoXiaoJian/safesentinel" target="_blank" rel="noopener noreferrer">SafeSentinel ↗</a></div></div>
+        </section>
+
+        <section class="gallery-section" aria-labelledby="gallery-title">
+          <div class="gallery-heading"><p id="gallery-title" data-i18n="galleryTitle">项目里的一些画面</p><div class="gallery-tabs" role="tablist" aria-label="项目画面" data-i18n-label="galleryTabLabel" hidden><button id="gallery-tab-simulation" type="button" role="tab" aria-selected="true" aria-controls="gallery-panel" tabindex="0" data-gallery="simulation" data-i18n="gallerySimulation">G1 仿真</button><button id="gallery-tab-evaluation" type="button" role="tab" aria-selected="false" aria-controls="gallery-panel" tabindex="-1" data-gallery="evaluation" data-i18n="galleryEvaluation">真机评估</button><button id="gallery-tab-data" type="button" role="tab" aria-selected="false" aria-controls="gallery-panel" tabindex="-1" data-gallery="data" data-i18n="galleryData">数据采集</button><button id="gallery-tab-hand" type="button" role="tab" aria-selected="false" aria-controls="gallery-panel" tabindex="-1" data-gallery="hand" data-i18n="galleryHand">灵巧手</button></div></div>
+          <div id="gallery-panel" class="gallery-panel" role="tabpanel" aria-labelledby="gallery-tab-simulation"><button class="gallery-image-button" type="button" aria-label="放大图片" data-i18n-label="enlargeImage"><img id="gallery-image" src="assets/g1-simulation.png" width="2048" height="1122" loading="lazy" alt="Isaac Sim 中的 G1 机器人与桌面操作场景"></button><div class="gallery-caption"><span id="gallery-caption">G1 的 Isaac Sim 仿真场景</span><span data-i18n="galleryHint">点击放大 ↗</span></div></div>
+        </section>
+
+        <section class="now section" id="now" aria-labelledby="now-title">
+          <div class="now-heading"><p class="section-index">02 / <span data-i18n="nowEyebrow">近况</span></p><h2 id="now-title" data-i18n="nowTitle">手头的事情</h2><p class="now-note" data-i18n="nowNote">主要还是围着真机转。</p></div>
+          <ul class="now-list">
+            <li><span class="now-marker" aria-hidden="true">↳</span><div><h3 data-i18n="nowRobotTitle">把模型放到机器人上</h3><p data-i18n="nowRobot">在 G1 和 Piper-X 上做策略部署与评估，看看仿真里的表现能带过去多少。</p></div></li>
+            <li><span class="now-marker" aria-hidden="true">↳</span><div><h3 data-i18n="nowDataTitle">把数据整理好</h3><p data-i18n="nowData">做 RGB-D、触觉和机器人状态的采集与对齐，让后面的训练和回放少踩一些坑。</p></div></li>
+            <li><span class="now-marker" aria-hidden="true">↳</span><div><h3 data-i18n="nowHandTitle">继续试灵巧手</h3><p data-i18n="nowHand">从人手重定向开始，一步步接上仿真、数据和模仿学习。</p></div></li>
+          </ul>
+        </section>
+
+        <section class="contact section" id="contact" aria-labelledby="contact-title">
+          <div><p class="section-index">03 / <span data-i18n="contactEyebrow">联系</span></p><h2 id="contact-title" data-i18n="contactTitle">有想聊的，来打个招呼。</h2><p data-i18n="contactText">项目相关的问题可以直接提 issue，也欢迎聊机器人、数据，或者游戏里的 AI。</p></div>
+          <a class="contact-button" href="https://github.com/JamesRaoXiaoJian" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" fill="currentColor"><path d="M12 .75a11.25 11.25 0 0 0-3.56 21.92c.56.1.77-.24.77-.54v-2.1c-3.14.68-3.8-1.33-3.8-1.33-.51-1.3-1.25-1.65-1.25-1.65-1.03-.7.08-.69.08-.69 1.14.08 1.73 1.17 1.73 1.17 1.01 1.72 2.65 1.22 3.3.93.1-.73.4-1.22.72-1.5-2.51-.29-5.15-1.26-5.15-5.57 0-1.23.44-2.24 1.16-3.03-.12-.29-.5-1.44.11-3 0 0 .95-.3 3.1 1.16a10.78 10.78 0 0 1 5.65 0c2.15-1.46 3.09-1.16 3.09-1.16.61 1.56.23 2.71.11 3 .72.79 1.16 1.8 1.16 3.03 0 4.32-2.65 5.28-5.17 5.56.4.35.77 1.04.77 2.1v3.08c0 .3.2.65.77.54A11.25 11.25 0 0 0 12 .75Z"/></svg><span data-i18n="contactButton">在 GitHub 找我</span><span aria-hidden="true">↗</span></a>
+        </section>
+      </main>
+
+      <footer class="site-footer"><span>© <span id="year">2026</span> James Rao</span><span data-i18n="footer">写代码，也慢慢把事情做好。</span><a href="#about" aria-label="回到顶部" data-i18n-label="backToTop">↑</a></footer>
+    </div>
+    <dialog class="image-dialog"><div class="dialog-topline"><span id="dialog-caption"></span><button class="dialog-close" type="button" aria-label="关闭图片" data-i18n-label="closeImage">×</button></div><img id="dialog-image" alt=""></dialog>
+  </body>
+</html>
